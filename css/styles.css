@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comic Sans MS, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 13%;
+    z-index: 5;
+    background: #ff89bf;
+}
+
+header .navbar {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 150px;
+    height: auto;
+}
+
+.navbar {
+    color: black;
+    align-items: center;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-menu .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+.hero-section{
+    min-height: 100vh;
+    background:#fec3df;  
+    padding-top: 80px;
+}
+
+.hero-image{
+    width: 500px;
+    height: auto;
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.hero-section .hero-details .title{
+    font-size: 100px;
+    color: black;
+    font-family:"Cherry Bomb One", sans-serif;
+}
+
+.hero-section .hero-details .subtitle{
+    margin-top: 4px;
+    max-width: 70%;
+    font-size: large;
+    font-family: Comic Sans MS, sans-serif;
+}
+
+.hero-section .hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+.whatis-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.whatis-section .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.whatis-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: none;
+}
+
+.whatis-image {
+    width: 400%;
+    max-width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.whatis-details {
+    flex: 1;
+    max-width: 600px;
+}
+
+.whatis-details h2 {
+    font-size: 32px;
+    color: #333;
+    font-family: 'Cherry Bomb One', sans-serif;
+    margin-bottom: 15px;
+}
+
+.whatis-details .text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.page {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    scroll-snap-align: start;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.page-1{
+    background-color: #fec3df;
+}
+
+.page-1 h2{
+    font-size: 50px;
+}
+
+.page-2{
+    background-color: #ff89bf;
+}
+
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: translateX(-50%);
+}
+
+.scroll-arrow button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#scroll-down {
+    background-color: #ff89bf;
+    color: #333;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#scroll-down:hover {
+    background-color: #ffc6e0;
+}
+
+.page2-image-wrapper {
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.page2-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#page-2 h2 {
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    font-family: 'Cherry Bomb One', sans-serif;
+    margin-bottom: 30px;
+}
+
+#page-2 ul {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    list-style-type: none;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+   flex-wrap: wrap;
+}
+
+#page-2 li {
+    background-color: #ffffff;
+    color: #ff89bf;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    min-width: 150px; 
+    flex: 1;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-2 li:hover {
+    background-color: #ff89bf;
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.page-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #fec3df;
+}
+
+.page-3 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "Cherry Bomb One", sans-serif;
+}
+
+.dessert-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dessert-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 5px;
+    background-color: #ff89bf;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .dessert-item {
+        width: 80%; 
+    }
+}
+
+.dessert-item img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dessert-item h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.dessert-item p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.page-3 .dessert-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero-section .hero-details .title {
+    font-size: 60px;
+    }
+    
+    .dessert-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .whatis-image {
+        max-width: 250px;
+        height: auto;
+    }
+
+
+    .desserts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dessert-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+.main-feedback{
+    display: flex;
+    padding: 100px 20px 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fec3df;
+    width: 100%;
+}
+
+.form h1{
+    font-family: 'Cherry Bomb One';
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.form{
+    background-color: #ff89bf;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row{
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group{
+    flex: 1;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group label, 
+.form-group input {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.rating-container{
+    text-align: center;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.star-rating label:hover,
+.star-rating input:checked ~ label:hover,
+.star-rating input:checked + label:hover {
+    color: gold; 
+    transform: scale(1.2);
+}
+.star-rating label:hover ~ label{
+    color: gold;
+}
+
+.star-rating input:checked ~ label {
+    color: #ccc; 
+}
+
+.star-rating input:checked + label,
+.star-rating input:checked + label ~ label {
+    color: gold;
+}
+
+
+.button-feedback {
+    margin-top: 40px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-feedback:hover {
+    background-color: #45a049;
+}
+
+#responseMessage {
+    width: 100%;
+    max-width: 400px;
+    display: none;
+}
+
+#responseMessage .form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+#responseMessage h1 {
+    font-family: 'Cherry Bomb One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#responseMessage p {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.thank-you-container {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-message {
+    display: none; 
+    background-color: #ff89bf;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+    align-items: center;
+    font-size: 10px;
+    font-family: 'Comic Sans MC';
+    padding: 10px;
+    background-color: #ff89bf;
+}
